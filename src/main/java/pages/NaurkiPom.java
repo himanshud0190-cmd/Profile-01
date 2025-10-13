@@ -67,6 +67,7 @@ public class NaurkiPom
 	
 	public void ClickProfileIcon() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		UtilityClass.WaitandClick(ProfileIcon);
 	}
 	
