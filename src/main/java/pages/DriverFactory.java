@@ -2,21 +2,31 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class DriverFactory {
 	static WebDriver driver;
 	public WebDriver initbrowser(String browsername)
 	{
-		if(browsername.equalsIgnoreCase("chrome")) 
+		if(browsername.equalsIgnoreCase("Chrome")) 
 		{
 			 driver =new ChromeDriver();
 		}
 		
-		else if(browsername.equalsIgnoreCase("firefox")) 
+		else if(browsername.equalsIgnoreCase("Firefox")) 
 		{
 			driver=new FirefoxDriver();
 		}
+		else if (browsername.equalsIgnoreCase("Edge"))
+		{
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\hd888\\Desktop\\IMP_Interview\\msedgedriver.exe");
+			 driver = new EdgeDriver();
+		}
+		
+		
 		return driver;
 		
 	}
