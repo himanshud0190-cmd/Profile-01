@@ -120,7 +120,7 @@ public class NaurkiPom
 		Thread.sleep(1000);
 		EnterResumeHeadline.clear();
 		Thread.sleep(1000);
-		EnterResumeHeadline.sendKeys("Strong background in Automation testing using Selenium and Java with BDD Cucumber using TestNG, Maven with ability to plan, design, execute test cases and Proficient in Manual Testing from Test Design to Test Case Execution and Reports.............");
+		EnterResumeHeadline.sendKeys("Experienced QA Engineer with strong expertise in Manual and Automation Testing, Skilled in Selenium, Java, TestNG, BDD Cucumber, API Testing (Postman, Rest Assured, Proficient in Agile methodologies, STLC, Defect Life Cycle, JIRA, Maven, Git, Jenkins");
 	}
 	
 	public void ClickSaveButton() throws InterruptedException
